@@ -1,0 +1,92 @@
+/**
+ * BASE STYLES
+ */
+* {
+	box-sizing: border-box;
+}
+
+html {
+	background-color: #fefefe;
+}
+
+body {
+	margin: 0;
+
+	font-family: 'PT Sans', sans-serif;
+}
+
+h1 {
+	text-align: center;
+}
+
+p {
+	text-align: justify;
+	margin: 0 0 25px;
+	line-height: 28px;
+
+	font-size: 16px;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	margin: 0 auto 25px;
+
+	border-radius: 3px;
+}
+
+ul {
+	margin-bottom: 50px;
+}
+
+iframe {
+	min-width: 100%;
+	min-height: 350px;
+	max-width: 100%;
+
+	border: none;
+}
+
+.container {
+	margin: 15px auto;
+	padding: 0 15px;
+	max-width: 800px;
+	width: 100%;
+}
+
+/**
+ * MODAL WINDOW & OVERLAY STYLES
+ */
+.window-modal {
+	display: none;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	overflow-y: auto;
+	position: fixed;
+	padding: 15px;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1000;
+
+	background-color: rgba(0,0,0,0.7);
+ }
+
+.window-modal__in {
+	position: relative;
+	max-width: 100%;
+	padding: 26px 30px 30px;
+	width: 500px;
+	z-index: 1001;
+
+	background-color: #fff;
+	border-radius: 3px;
+	box-shadow: 0 0 6px 2px rgba(50,50,50,0.3);
+}
+
+.window-activated {
+	overflow: hidden;
+	margin-right: 17px;
+}
